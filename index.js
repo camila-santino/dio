@@ -1,5 +1,5 @@
 const nome = "Nonsense";
-let qtdXp = 1;
+let qtdXp = 0;
  
 switch (qtdXp) {
     case (qtdXp <= 1000):
@@ -17,4 +17,5 @@ switch (qtdXp) {
       break;
     default:
         console.log("Seu Herói não iniciou a jornada.");
+        break;
 }   
