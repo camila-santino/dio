@@ -1,5 +1,5 @@
 const nome = "Burn";
-let qtdXp = 0;
+let qtdXp = 2005;
 
 switch (true) {
     case (qtdXp >= 1 && qtdXp <= 1000):
