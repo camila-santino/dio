@@ -1,21 +1,32 @@
-const nome = "Nonsense";
+const nome = "Burn";
 let qtdXp = 0;
- 
-switch (qtdXp) {
-    case (qtdXp <= 1000):
-    case (qtdXp >= 1):
-      console.log("O Herói " + nome + " está no nível Ferro")
+
+switch (true) {
+    case (qtdXp >= 1 && qtdXp <= 1000):
+      console.log("O Herói " + nome + " está no nível Ferro");
       break;
-    case (qtdXp <= 2001 && qtdXp <= 3000):
+    case (qtdXp >= 1001 && qtdXp <= 2000):
+      console.log("O Herói " + nome + " está no nível Bronze");
+      break;
+    case (qtdXp >= 2001 && qtdXp <= 5000):
       console.log("O Herói " + nome + " está no nível Prata");
-      break;    
-    case (qtdXp <= 3001 && qtdXp <= 4000):
+      break;
+    case (qtdXp >= 5001 && qtdXp <= 7000):
       console.log("O Herói " + nome + " está no nível Ouro");
-      break;    
-    case (qtdXp <= 4001 && qtdXp <= 5000):
+      break;
+    case (qtdXp >= 7001 && qtdXp <= 8000):
       console.log("O Herói " + nome + " está no nível Platina");
       break;
+     case (qtdXp >= 8001 && qtdXp <= 9000):
+      console.log("O Herói " + nome + " está no nível Ascendente");
+      break;
+    case (qtdXp >= 9001 && qtdXp <= 10000):
+      console.log("O Herói " + nome + " está no nível Imortal");
+      break;
+    case (qtdXp >= 10001):
+      console.log("O Herói " + nome + " está no nível Radiante");
+      break;
     default:
-        console.log("Seu Herói não iniciou a jornada.");
-        break;
-}   
+      console.log("Seu Herói não iniciou a jornada.");
+      break;
+}
