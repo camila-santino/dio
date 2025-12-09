@@ -28,13 +28,3 @@ class Heroi {
         console.log(`O ${this.tipo} atacou usando ${ataque}`);
     }
 }
-
-// Exemplos de uso:
-const heroi1 = new Heroi("Rael", 22, "mago");
-heroi1.atacar();
-
-const heroi2 = new Heroi("Kara", 30, "guerreiro");
-heroi2.atacar();
-
-const heroi3 = new Heroi("Shin", 19, "ninja");
-heroi3.atacar();
