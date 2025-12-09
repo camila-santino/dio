@@ -29,13 +29,21 @@ function calcularSaque(valor) {
     while (valorSaque >= 50) {
         notas50++;
         valorSaque -= 50;
-        continue
         // Retira notas de 50 enquanto possível, incrementando o contador.
     }
 
     // TODO: Retire notas de 20 enquanto possível.
 
+    while (valorSaque >= 20) {
+        notas20++;
+        valorSaque -= 20;
+    }
+
     // TODO: Retire notas de 10 enquanto possível.
+    while (valorSaque >= 10) {
+        notas10++;
+        valorSaque -= 10;
+    }
 
     return `50:${notas50} 20:${notas20} 10:${notas10}`;
     // Retorna uma string mostrando quantas notas de cada valor foram usadas.
