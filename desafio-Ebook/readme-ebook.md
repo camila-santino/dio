@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="100" src="https://github.com/camila-santino/dio/desafio-Ebook/assets">
+    <img width="100" src="/desafio-Ebook/assets/banner.jpg">
 </p>
 
 
