@@ -12,7 +12,7 @@
 
 <p align="center">
 <img 
-    src="https://github.com/camila-santino/dio/tree/17f06b58b5b6b9cade4c86aca42829b917149ba7/desafio-Ebook/assets/my-notion-face.png"
+    src="/desafio-Ebook/assets/my-notion-face.png"
     width="400"  
 />
 </p>
