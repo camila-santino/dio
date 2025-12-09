@@ -7,11 +7,10 @@ Oi! Sou Camila — desenvolvedora por curiosidade e artista por natureza, direto
 
 ---
 
-# 🚀 Projetos:
+# 🚀 Projetos da Dio:
 1. [Desafio Ebook por prompts](/desafio-Ebook/readme-ebook.md)
-2. [Desafio Podcast por prompts](camila-santino/dio/Podcast_IA)
-3. [Diolab](camila-santino/dio/Diolab)
-4. [Desafios - Fundamentos da Programação](camila-santino/dio/desafio-Fundamentos)
+2. [Desafio Podcast por prompts](/desafio-podcast/readme-podcast.md)
+3. [Diolab](/desafio-lab/readme-lab.md)
 
 ---
 
