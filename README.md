@@ -1,19 +1,21 @@
 # 👩🏾‍💻 Sobre mim
+[Readme completo em fr, ing e pt-br](https://github.com/camila-santino/camila_santino/blob/main/README.md)
 
-Oi! Sou Camila — desenvolvedora por curiosidade e artista por natureza, direto de Fortaleza, Brasil 🇧🇷. Eu sou uma pessoa que gosta de praticar códigos e inventar meus próprios apps e automações. Finalmente, resolvi praticar por aqui e não só ficar observando.
-
-Sou apaixonada por arte, HQs, poesia, narrativas visuais e tudo que revela o cotidiano com novos olhos. Também estudo idiomas: atualmente praticando inglês e francês, e iniciando alemão.
-
-Crio apps por diversão — gosto de transformar ideias em experiências interativas. Testo jogos, exploro interfaces e observo tendências com um olhar crítico e criativo. Programar, pra mim, é tão expressivo quanto escrever ou desenhar. Aprendi de forma autodidata, explorando documentações, tutoriais e projetos experimentais. Nem sempre sei o nome da linguagem que estou usando — mas sei o que quero construir, e busco aprender o necessário para isso. Gosto de testar ideias com código, mesmo sem seguir uma estrutura formal: o foco é criar, entender e evoluir.
-
-Tenho interesse em explorar como a inteligência artificial pode ampliar experiências culturais, narrativas e interações humanas. Acredito que linguagens — sejam humanas ou de código — são pontes entre mundos. Vejo a tecnologia como ferramenta cultural, e quero trabalhar em projetos que unam essas dimensões, criando experiências que conectem pessoas, ideias e mundos.
-
-> “Sou feita de momentos que não cabem em palavras.”  
+Oi! Sou Camila — desenvolvedora por curiosidade e artista por natureza, direto de Fortaleza, Brasil 🇧🇷. Eu sou uma pessoa que gosta de praticar códigos e inventar meus próprios apps e automações. Finalmente, resolvi praticar por aqui e não só ficar observando. Nem sempre sei o nome da linguagem que estou usando — mas sei o que quero construir, e busco aprender o necessário para isso. Gosto de testar ideias com código, mesmo sem seguir uma estrutura formal: o foco é criar, entender e evoluir. Vejo a tecnologia como ferramenta cultural, e quero trabalhar em projetos que unam essas dimensões, criando experiências que conectem pessoas, ideias e mundos.
+ 
 > “We’re made of star stuff.” — Carl Sagan
 
 ---
 
-### 🛠️ Habilidades e Competências
+# 🚀 Projetos:
+1. [Desafio Ebook por prompts](camila-santino/dio/Ebook_ia)
+2. [Desafio Podcast por prompts](camila-santino/dio/Podcast_IA)
+3. [Diolab](camila-santino/dio/Diolab)
+4. [Desafios - Fundamentos da Programação](camila-santino/dio/desafio-Fundamentos)
+
+---
+
+## 🛠️ Habilidades e Competências
 
 - UX/UI · prototipagem · apps experimentais · no-code · Git · Figma · APIs · web scraping  
 - Inteligência Artificial · machine learning · processamento de linguagem natural  
@@ -22,20 +24,15 @@ Tenho interesse em explorar como a inteligência artificial pode ampliar experi�
 
 ---
 
-### 🌐 Links rápidos
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Camila%20Santino-blue?logo=linkedin)](https://www.linkedin.com/in/camilasantino)  
-[![Linklist](https://img.shields.io/badge/Linklist.bio-camila__santino-9cf?logo=linktree)](https://linklist.bio/camila_santino)
-
----
-
-### 📫 Conecte-se comigo
+## 📫 Conecte-se comigo
 
 Se você gosta de projetos com alma, ideias fora da curva ou quer trocar experiências, fique à vontade para me chamar.  
 Aqui, cada repositório é uma tentativa de transformar curiosidade em criação.
+---
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Camila%20Santino-blue?logo=linkedin)](https://www.linkedin.com/in/camilasantino)  [![Linklist](https://img.shields.io/badge/Linklist.bio-camila__santino-9cf?logo=linktree)](https://linklist.bio/camila_santino)
 
 ---
 
 Feito com curiosidade, café e poesia.  
 Obrigada por visitar meu espaço ✨
-# dio
