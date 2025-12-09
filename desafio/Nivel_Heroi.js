@@ -1,10 +1,3 @@
-// ---------- SIMULADOR DE gets() E print() ----------
-const fs = require("fs");
-const input = fs.readFileSync(0, "utf8").trim().split(/\r?\n/);
-let lineIndex = 0;
-
-global.gets = () => input[lineIndex++];
-global.print = (text) => console.log(text);
 
 // Lê valores informados pelo usuário:
 let wins = parseInt(gets());     // número de vitórias
