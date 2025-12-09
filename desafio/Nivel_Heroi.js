@@ -1,4 +1,3 @@
-
 // Lê valores informados pelo usuário:
 let wins = parseInt(gets());     // número de vitórias
 let losses = parseInt(gets());   // número de derrotas
