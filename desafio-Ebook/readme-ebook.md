@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="100" src=".desafio-Ebook/assets/banner.jpg">
+    <img width="100" src="desafio-Ebook/assets/banner.jpg">
 </p>
 
 
@@ -12,7 +12,7 @@
 
 <p align="center">
 <img 
-    src=".desafio-Ebook/assets/my-notion-face.png"
+    src="desafio-Ebook/assets/my-notion-face.png"
     width="400"  
 />
 </p>
