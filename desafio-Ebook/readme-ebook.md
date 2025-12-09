@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="100" src="desafio-Ebook/assets/banner.jpg">
+    <img width="100" src="https://github.com/camila-santino/dio/tree/17f06b58b5b6b9cade4c86aca42829b917149ba7/desafio-Ebook/assets">
 </p>
 
 
@@ -12,7 +12,7 @@
 
 <p align="center">
 <img 
-    src="desafio-Ebook/assets/my-notion-face.png"
+    src="https://github.com/camila-santino/dio/tree/17f06b58b5b6b9cade4c86aca42829b917149ba7/desafio-Ebook/assets/my-notion-face.png"
     width="400"  
 />
 </p>
