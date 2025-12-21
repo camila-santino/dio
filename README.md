@@ -1,10 +1,13 @@
-# Desafios Dio
 
-> Neste repositório ficam todos os projetos feitos em cursos da Dio.
+> “We’re made of star stuff.” — Carl Sagan
+
+# Cursos da Dio
+
+> Neste repositório ficam todos os projetos e desafios feitos em cursos na Dio.
 
 ---
 
-## 🚀 Projetos na Dio
+## 🚀 Projetos
 
 1. [Desafio Ebook por prompts](/desafio-Ebook/readme-ebook.md)
 2. [Desafio Podcast por prompts](/desafio-podcast/readme-podcast.md)
@@ -23,10 +26,9 @@
 
 ## 📫 Conecte-se comigo
 
-[Readme completo em fr, ing e pt-br](https://github.com/camila-santino/camila_santino/blob/main/README.md)
+> [Readme completo em fr, ing e pt-br](https://github.com/camila-santino/camila_santino/blob/main/README.md)
 
 Oi! Sou Camila — desenvolvedora por curiosidade e artista por natureza, direto de Fortaleza, Brasil 🇧🇷. Eu sou uma pessoa que gosta de praticar códigos e inventar meus próprios apps e automações. Finalmente, resolvi praticar por aqui e não só ficar observando. Nem sempre sei o nome da linguagem que estou usando — mas sei o que quero construir, e busco aprender o necessário para isso. Gosto de testar ideias com código, mesmo sem seguir uma estrutura formal: o foco é criar, entender e evoluir. Vejo a tecnologia como ferramenta cultural, e quero trabalhar em projetos que unam essas dimensões, criando experiências que conectem pessoas, ideias e mundos.
-
 Se você gosta de projetos com alma, ideias fora da curva ou quer trocar experiências, fique à vontade para me chamar.
 Aqui, cada repositório é uma tentativa de transformar curiosidade em criação.
 
@@ -35,4 +37,3 @@ Aqui, cada repositório é uma tentativa de transformar curiosidade em criação
 ---
 
 Obrigada por visitar meu espaço ✨
-“We’re made of star stuff.” — Carl Sagan
