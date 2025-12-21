@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 Projetos da Dio
+## 🚀 Projetos na Dio
 
 1. [Desafio Ebook por prompts](/desafio-Ebook/readme-ebook.md)
 2. [Desafio Podcast por prompts](/desafio-podcast/readme-podcast.md)
