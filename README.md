@@ -8,9 +8,10 @@ Oi! Sou Camila — desenvolvedora por curiosidade e artista por natureza, direto
 ---
 
 # 🚀 Projetos da Dio:
-1. [Desafio Ebook por prompts](/desafio-Ebook/readme-ebook.md)
-2. [Desafio Podcast por prompts](/desafio-podcast/readme-podcast.md)
-3. [Diolab](/desafio-lab/readme-lab.md)
+
+1. [Desafio Ebook por prompts](desafio-Ebook\readme-ebook.md)
+2. [Desafio Podcast por prompts](desafio-podcast\readme-podcast.md)
+3. [Diolab](desafio-lab\readme-lab)
 
 ---
 
