@@ -1,26 +1,21 @@
-# 👩🏾‍💻 Sobre mim
-
-[Readme completo em fr, ing e pt-br](https://github.com/camila-santino/camila_santino/blob/main/README.md)
-
-Oi! Sou Camila — desenvolvedora por curiosidade e artista por natureza, direto de Fortaleza, Brasil. Eu sou uma pessoa que gosta de praticar códigos e inventar meus próprios apps e automações. Finalmente, resolvi praticar por aqui e não só ficar observando. Nem sempre sei o nome da linguagem que estou usando — mas sei o que quero construir, e busco aprender o necessário para isso. Gosto de testar ideias com código, mesmo sem seguir uma estrutura formal: o foco é criar, entender e evoluir, usar como ferramenta. E quero trabalhar em projetos  que unam tecnologias e culturas, criando experiências que conectem pessoas, ideias e mundos.
 
 > “We’re made of star stuff.” — Carl Sagan
 
----
+# Cursos da Dio
 
-# Sobre o repositório
-
-🚀 Projetos da Dio
----
-
-1. [Desafio Ebook por prompts](desafio-Ebook\readme-ebook.md)
-2. [Desafio Podcast por prompts](desafio-podcast\readme-podcast.md)
-3. [Diolab](desafio-lab\readme-lab)
+> Neste repositório ficam todos os projetos e desafios feitos em cursos na Dio.
 
 ---
 
-🛠️ Habilidades e Competências
+## 🚀 Projetos
+
+1. [Desafio Ebook por prompts](/desafio-Ebook/readme-ebook.md)
+2. [Desafio Podcast por prompts](/desafio-podcast/readme-podcast.md)
+3. [Dio-lab](/desafio-lab/readme-lab.md)
+
 ---
+
+## 🛠️ Habilidades e Competências
 
 - UX/UI · prototipagem · apps experimentais · no-code · Git · Figma · APIs · web scraping  
 - Inteligência Artificial · machine learning · processamento de linguagem natural  
@@ -29,17 +24,16 @@ Oi! Sou Camila — desenvolvedora por curiosidade e artista por natureza, direto
 
 ---
 
-📫 Conecte-se comigo
----
+## 📫 Conecte-se comigo
 
-Se você gosta de projetos com alma, ideias fora da curva ou quer trocar experiências, fique à vontade para me chamar.  
+> [Readme completo em fr, ing e pt-br](https://github.com/camila-santino/camila_santino/blob/main/README.md)
+
+Oi! Sou Camila — desenvolvedora por curiosidade e artista por natureza, direto de Fortaleza, Brasil 🇧🇷. Eu sou uma pessoa que gosta de praticar códigos e inventar meus próprios apps e automações. Finalmente, resolvi praticar por aqui e não só ficar observando. Nem sempre sei o nome da linguagem que estou usando — mas sei o que quero construir, e busco aprender o necessário para isso. Gosto de testar ideias com código, mesmo sem seguir uma estrutura formal: o foco é criar, entender e evoluir. Vejo a tecnologia como ferramenta cultural, e quero trabalhar em projetos que unam essas dimensões, criando experiências que conectem pessoas, ideias e mundos.
+Se você gosta de projetos com alma, ideias fora da curva ou quer trocar experiências, fique à vontade para me chamar.
 Aqui, cada repositório é uma tentativa de transformar curiosidade em criação.
-
----
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Camila%20Santino-blue?logo=linkedin)](https://www.linkedin.com/in/camilasantino)  [![Linklist](https://img.shields.io/badge/Linklist.bio-camila__santino-9cf?logo=linktree)](https://linklist.bio/camila_santino)
 
 ---
 
-Feito com curiosidade, café e poesia.  
 Obrigada por visitar meu espaço ✨
