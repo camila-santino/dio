@@ -1,4 +1,5 @@
-# Projeto: Inteligência Artificial e Cultura
+<h1 align="center">Projeto: <br> Inteligência Artificial e Cultura
+</h1>
 
 ## 📌 Descrição do Desafio
 Este projeto foi desenvolvido como parte do **Desafio de Projeto do Bootcamp Santander Educa IA da DIO**.  
@@ -25,8 +26,15 @@ O plano de aula intitulado **“Inteligência Artificial e seus usos na área da
 
 ---
 
-## 🤖 Ferramentas de IA utilizadas
-- **Ecossistema Copilot (Microsoft):** apoio na redação, revisão e estruturação do plano de aula.  
+### ✍️ Créditos e Autoria
+- **Ministrante:** Camila Santino  
+- **Desenvolvimento e apoio com IA:** Microsoft Copilot  
+- **Bootcamp:** Santander Educa IA – DIO
+
+---
+
+## 🤖 Ecossistema de IA utilizado
+- **Ecossistema Copilot (Microsoft):** apoio na redação, revisão e estruturação do plano de aula e Readme.  
 - **Ferramentas gratuitas sugeridas no plano:**  
   - DALL·E (geração de imagens).  
   - Canva (design acessível).  
@@ -35,12 +43,25 @@ O plano de aula intitulado **“Inteligência Artificial e seus usos na área da
   - Plataformas open source para análise de dados culturais.  
 
 ---
+## Arquivos e Pastas
 
-## 📂 Lista de Arquivos Gerados
-- `Plano_de_Aula_IA_Cultura_Camila_Santino.docx` → Documento final editável com o plano de aula revisado.  
-- Estruturas de slides (em tópicos) para apresentação inclusiva e acessível.  
-- Exemplos de prompts culturais (curtos e completos).  
-- Guia rápido para a ministrante (em desenvolvimento).  
+### 📂 Lista de Arquivos Gerados
+
+### Estrutura de Pastas do Repositório
+├── 📄 README.md
+│
+├── 📁 docs/                          # Documentação do projeto
+│   ├── Plano_de_Aula.pdf      # Plano de aula (versão final)
+│   ├── Guia_Rapido_Ministrante.docx  # Guia rápido para ministrante
+│   └── Guia_Slides.pdf       # Instrução para slides com Estrutura de slides em tópicos
+│   └── 📂 anexos/                  
+│   ├── Atividades_Praticas.pdf # Atividades práticas e fichas
+│   └── Exemplos_Prompts.pdf   # Exemplos de prompts culturais
+│   └── 📂 prompts/                 # Exemplos de prompts culturais
+│   ├── Prompts_Copilot.md
+│
+── 📂 ├── 📁 assets/                        # Imagens do projeto
+└── ...
 
 ---
 
@@ -50,65 +71,16 @@ A construção colaborativa do plano de aula reforça a importância de unir **t
 
 ---
 
-## ✍️ Créditos e Autoria
-- **Ministrante:** Camila Santino  
-- **Desenvolvimento e apoio com IA:** Microsoft Copilot  
-- **Bootcamp:** Santander Educa IA – DIO
+## 📫 Conecte-se comigo
 
-___
-# Project: Artificial Intelligence and Culture
+Se você gosta de projetos com alma, ideias fora da curva ou quer trocar experiências, fique à vontade para me chamar.  
+Aqui, cada repositório é uma tentativa de transformar curiosidade em criação.
 
-## 📌 Challenge Description
-This project was developed as part of the **Bootcamp Santander Educa IA by DIO**.  
-The goal was to design, review, and structure a **complete lesson plan** on the use of Artificial Intelligence in the cultural field, considering diversity, accessibility, ethics, and strategic planning.  
-
-Throughout the process, support materials, slide suggestions, and a final **DOCX document** were generated for practical use in educational and cultural environments.
+[Bio](https://github.com/camila-santino/camila_santino/blob/fa1e534623954871c13bdc605d6002ad1712a52f/README.md)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Camila%20Santino-blue?logo=linkedin)](https://www.linkedin.com/in/camilasantino)  
+[![Linklist](https://img.shields.io/badge/Linklist.bio-camila__santino-9cf?logo=linktree)](https://linklist.bio/camila_santino)
 
 ---
 
-## 📖 Lesson Plan Summary
-The lesson plan titled **“Artificial Intelligence and its uses in Culture”** focuses on:
-- Training participants to understand, analyze, and apply AI tools in cultural projects.  
-- Promoting debates on ethics, diversity, accessibility, and democratization of access.  
-- Stimulating the creation of creative and functional prompts.  
-- Developing collective projects that use AI in different stages of the cultural chain.  
-
-**Main structure:**
-- **Workload:** 20h (5 sessions of 4h each).  
-- **Format:** hybrid (in-person + online).  
-- **Program content:** AI fundamentals, diversity and accessibility, ethics and privacy, intellectual property, free tools, strategic planning with AI, cultural data analysis, prompt creation, and final group project.  
-- **Methodology:** dialogued lectures, practical exercises, debates, and group dynamics.  
-- **Evaluation:** process-based and participatory, with mandatory final presentation.  
-- **References:** national works in ABNT standard and complementary digital content (videos, podcasts, blogs, and websites).  
-
----
-
-## 🤖 AI Tools Used
-- **Copilot Ecosystem (Microsoft):** support in writing, reviewing, and structuring the lesson plan.  
-- **Free tools suggested in the plan:**  
-  - DALL·E (image generation).  
-  - Canva (accessible design).  
-  - RunwayML (multimedia creation).  
-  - Photopea (image editing).  
-  - Open source platforms for cultural data analysis.  
-
----
-
-## 📂 Generated Files
-- `Plano_de_Aula_IA_Cultura_Camila_Santino.docx` → Final editable document with the revised lesson plan.  
-- Slide structures (in topics) for inclusive and accessible presentation.  
-- Examples of cultural prompts (short and complete).  
-- Quick guide for the instructor (in development).  
-
----
-
-## 💡 Final Reflection
-This project demonstrates how **Artificial Intelligence can be applied critically and inclusively in the cultural field**, not only as a technical tool but also as a resource to expand diversity, accessibility, and innovation in creative processes.  
-The collaborative construction of the lesson plan reinforces the importance of combining **technology and culture** in educational practices that value collectivity and ethical awareness.
-
----
-
-## ✍️ Credits and Authorship
-- **Instructor:** Camila Santino  
-- **Development and AI support:** Microsoft Copilot  
-- **Bootcamp:** Santander Educa IA – DIO
+Feito com curiosidade, café e poesia.  
+Obrigada por visitar meu espaço ✨
