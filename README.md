@@ -48,20 +48,25 @@ O plano de aula intitulado **“Inteligência Artificial e seus usos na área da
 ### 📂 Lista de Arquivos Gerados
 
 ### Estrutura de Pastas do Repositório
-├── 📄 README.md
+📦 projeto/
+├── 📄 README.md                       # Documentação principal do projeto
 │
-├── 📁 docs/                          # Documentação do projeto
-│   ├── Plano_de_Aula.pdf      # Plano de aula (versão final)
-│   ├── Guia_Rapido_Ministrante.docx  # Guia rápido para ministrante
-│   └── Guia_Slides.pdf       # Instrução para slides com Estrutura de slides em tópicos
-│   └── 📂 anexos/                  
-│   ├── Atividades_Praticas.pdf # Atividades práticas e fichas
-│   └── Exemplos_Prompts.pdf   # Exemplos de prompts culturais
-│   └── 📂 prompts/                 # Exemplos de prompts culturais
-│   ├── Prompts_Copilot.md
+├── 📁 docs/                           # Documentação pedagógica e técnica
+│   ├── 📄 Plano_de_Aula.pdf            # Plano de aula (versão final)
+│   ├── 📄 Guia_Rapido_Ministrante.docx # Guia rápido para o ministrante
+│   ├── 📄 Guia_Slides.pdf              # Estrutura e orientações para slides
+│   │
+│   ├── 📁 anexos/                      # Materiais complementares
+│   │   ├── 📄 Atividades_Praticas.pdf  # Atividades práticas e fichas
+│   │   └── 📄 Exemplos_Prompts.pdf     # Exemplos de prompts culturais
+│   │
+│   └── 📁 prompts/                     # Coleção organizada de prompts
+│       └── 📄 Prompts_Copilot.md       # Exemplos de uso com Copilot
 │
-── 📂 ├── 📁 assets/                        # Imagens do projeto
-└── ...
+├── 📁 assets/                         # Recursos visuais do projeto
+│
+└── 📁 src/                            # Código-fonte e scripts (opcional)
+    └── ...                            # Outros arquivos do projeto
 
 ---
 
