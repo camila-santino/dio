@@ -48,10 +48,12 @@ O plano de aula intitulado **“Inteligência Artificial e seus usos na área da
 ### 📂 Lista de Arquivos Gerados
 
 ### Estrutura de Pastas do Repositório
+
+```
 📦 projeto/
-├── 📄 README.md                       # Documentação principal do projeto
+├── 📄 README.md                        # Documentação principal do projeto
 │
-├── 📁 docs/                           # Documentação pedagógica e técnica
+├── 📁 docs/                            # Documentação pedagógica e técnica
 │   ├── 📄 Plano_de_Aula.pdf            # Plano de aula (versão final)
 │   ├── 📄 Guia_Rapido_Ministrante.docx # Guia rápido para o ministrante
 │   ├── 📄 Guia_Slides.pdf              # Estrutura e orientações para slides
@@ -63,12 +65,8 @@ O plano de aula intitulado **“Inteligência Artificial e seus usos na área da
 │   └── 📁 prompts/                     # Coleção organizada de prompts
 │       └── 📄 Prompts_Copilot.md       # Exemplos de uso com Copilot
 │
-├── 📁 assets/                         # Recursos visuais do projeto
-│
-└── 📁 src/                            # Código-fonte e scripts (opcional)
-    └── ...                            # Outros arquivos do projeto
-
----
+└── 📁 assets/                          # Recursos visuais do projeto
+```
 
 ## 💡 Reflexão Final
 Este projeto demonstra como a **Inteligência Artificial pode ser aplicada de forma crítica e inclusiva na área cultural**, não apenas como ferramenta técnica, mas como recurso para ampliar a diversidade, acessibilidade e inovação nos processos criativos.  
