@@ -1,324 +1,240 @@
+# Desafio de Projeto — Simulador de Investimentos em FIIs
 
-# Desafio de Projeto DIO - Simulador de investimentos em planilha em estilo *app*
+[![DIO - Simulador Financeiro](https://img.shields.io/badge/DIO-Simulador%20Financeiro-blue)](https://dio.me)
+![Feito com Inteligência Artificial](https://img.shields.io/badge/feito_com-Intelig%C3%AAncia%20Artificial-blue?style=plastic)
+![Status do projeto: pronto para publicação](https://img.shields.io/badge/Status-v3.1%20%282026%29-brightgreen?style=plastic)
 
-```markdown
-Badge Status
-!Static Badge
-Badge Dio
-<p align="center">
-		<a href="https://dio.me/"><img src="https://img.shields.io/badge/DIO-Course-28DA77?logo=youtube" alt="DIO - course"></a>
-		<a href="https://dio.me/"><img src="https://img.shields.io/badge/DIO-Course-28DA77?logo=youtube" alt="DIO - course"></a>
-</p>
-```
+---
 
-## Sugestões de navegação
+## Painel de navegação
 
-### Estrutura de arquivos
+### Estrutura do repositório
 
-```markdown
+```text
 desafio-simulador-investimentos/
-    ├── readme-simulador.md
-    ├── recursos
-        ├── arquivos
-        ├── artefatos
-        ├── midia
+├── readme-simulador.md
+└── recursos/
+    ├── arquivos/
+    │   ├── Do Grão à Xícara de Café.pdf
+    │   ├── Simulador de Investimentos V3.1 - Camila Santino - 2026.csv
+    │   ├── Simulador de Investimentos V3.1 - Camila Santino - 2026.ods
+    │   ├── Simulador de Investimentos V3.1 - Camila Santino - 2026.xlsx
+    │   └── Simulador de Investimentos V3.1 - Camila Santino - 2026.zip
+    ├── artefatos/
+    │   ├── construcao-simulador.md
+    │   ├── do-grao-a-xicara-de-cafe.md
+    │   └── tutorial-simulador.md
+    └── midia/
+        ├── metafora.jpg
+        ├── printaba12.png
+        └── printaba2full.png
 ```
 
 ### Navegação guiada
 
-→ Vá direto para o minitutorial.
+* [Visão geral e objetivos](#visão-geral)
+* [Por dentro da planilha (fórmulas, variáveis, versões e perfis)](#por-dentro-da-planilha)
+* [Como usar o simulador (Tutorial completo com telas e vídeos)](recursos/artefatos/tutorial-simulador.md)
+* [Guia prático de criação do zero (Construção e acessibilidade)](recursos/artefatos/construcao-simulador.md)
+* [Do Grão à Xícara de Café — Entendendo o ETL](recursos/artefatos/do-grao-a-xicara-de-cafe.md)
+* [Tecnologias e ferramentas utilizadas](#tecnologias-e-ferramentas-utilizadas)
+* [Materiais e links para download](#materiais-e-links)
 
-→ Vá direto para a construção do simulador.
-
-→ Vá direto para a sessão de tecnologias utilizadas.
-
-→ Vá direto para a sessão do simulador.
-
-→ Vá direto para o material de download.
-
-→ Vá direto para os relatórios gerados.
+---
 
 ## Visão geral
 
-Projeto desenvolvido como parte do desafio prático do bootcamp Reclame AQUI - Dados e IA na Prática, em parceria com a Digital Innovation One (DIO). Esta ferramenta foi criada do zero no Google Planilhas como uma ferramenta interativa para ajudar no planejamento financeiro, com foco na projeção de patrimônio e dividendos mensais com Fundos Imobiliários (FIIs). A planilha, com usabilidade, estética e navegação semelhantes às de um aplicativo, responde à cinco perguntas de negócio, projeta o patrimônio em cenários de 2 a 30 anos e divide o aporte entre seis tipos de FIIs, conforme o perfil de investidor escolhido numa lista.
+Este projeto foi desenvolvido para o desafio prático do bootcamp **Reclame AQUI — Dados e IA na Prática**, em parceria com a **Digital Innovation One (DIO)**. O objetivo foi construir do zero uma planilha de simulação de investimentos em **Fundos de Investimento Imobiliário (FIIs)** com visual e navegação próximos aos de um aplicativo, priorizando clareza matemática, acessibilidade digital nativa e linguagem simples.
 
-Segundo o instrutor Felipe Aguiar, o que separa o uso comum de planilhas de sua aplicação como ferramenta de soluções dinâmicas é a capacidade de estruturar dados de forma estratégica. Em vez de utilizar o Excel apenas como um bloco de notas digital com linhas e colunas desconectadas, a proposta serviu para ensinar a arquitetura matemática e a modelagem lógica por trás de cada fórmula. 
+A ferramenta responde a cinco perguntas centrais de planejamento financeiro, projeta o crescimento do patrimônio e dos dividendos mensais em prazos de 2 a 30 anos (além de um campo para prazo personalizado) e divide o aporte mensal entre seis categorias de FIIs conforme o perfil de investidor selecionado.
 
-### Tabela 1 - Planilha comum vs Simulador
+### Planilha tradicional vs. Simulador tipo app
 
-| 📊 Planilha Comum (Tradicional) | 📱 Simulador Tipo App (Profissional) |
-| --- | --- |
-| **Estrutura Poluída:** Células e fórmulas expostas sem hierarquia visual clara, misturando dados e resultados. | **Interface Limpa:** Sem linhas de grade, com banner superior estilizado e blocos delimitados de leitura. |
-| **Visual Genérico:** Grade de linhas padrão visível, causando poluição visual e dificultando a leitura. | **Campos Destacados:** Separação clara entre entradas (campos dimensionais) e resultados (campos fato). |
-| **Vulnerabilidade:** Risco constante de exclusão acidental de fórmulas por falta de sinalização visual. | **Interatividade UI/UX:** Uso de menus suspensos (Validação de Dados) para seleção dinâmica de perfis. |
-| **Fórmulas Ilegíveis:** Coordenadas numéricas diretas e genéricas (ex: =C5*(1+B12)). | **Fórmulas Semânticas:** Uso de Intervalos Nomeados, facilitando a auditoria e manutenção do modelo. |
-| **Sem Foco Gerencial:** Ausência de fluxo de navegação ou orientação para apoio à tomada de decisão. | **Foco em Decisão:** Estrutura totalmente orientada a responder Perguntas de Negócio reais. |
-
-## Criação e desenvolvimento
-
-### Fase 1 - Termos técnico-financeiros
-
-Antes de iniciar a construção da ferramenta, para que a planilha fosse utilizada por qualquer pessoa, foi preciso pesquisar e estudar alguns termos que seriam utilizados. Com o auxílio do Notebook Gemini e do Modo IA, consegui entender os conceitos atrás de cada palavra utilizada pelo instrutor. Com esta base, foi possível fazer substituições de nomenclatura sem perder o significado, além de ser capaz de saber, entender, escolher e estruturar as fórmulas para os cálculos necessários.  Esses termos e mudanças estão na tabela 2, logo abaixo.
-
-#### Tabela 2 - Conceitos
-
-| Conceito / Função | Definição Simplificada | Substituições |
-| --- | --- | --- |
-| Alocação | Distribuir o dinheiro entre diferentes tipos de investimentos para diminuir riscos e equilibrar a carteira de investimentos. | Divisão do aporte mensal |
-| Aporte | Valor em dinheiro que se adiciona com uma frequência específica (ex. anuais, mensais) aos investimentos para fazer o patrimônio crescer. | dinheiro, investimento, aplicação |
-| Capital Inicial | Quantia de dinheiro ou bens utilizada para começar uma empresa ou iniciar um investimento. | valor total de recursos financeiros atuais |
-| Carteira de investimentos | Distribuição de aportes por categoria de FII / Divisão do aporte mensal | O conjunto de todos os investimentos que uma pessoa possui (ações, renda fixa, fundos etc.). |
-| Juros Compostos | Painel de evolução do investimento / Estimativa de patrimônio total | Efeito em que os juros rendem sobre os próprios juros acumulados, acelerando o crescimento do capital. |
-| Taxa Mensal Equivalente | Taxa mensal equivalente / tx_mensal | Taxa proporcional calculada mês a mês que equivale exatamente ao rendimento total esperado no ano. |
-| Regra dos 30% | Sugestão de aplicação (30%) / dica_aporte | Estratégia de poupar e aplicar 30% dos seus rendimentos a cada mês para investir. |
-| Dividendos | Valor pago em dinheiro proporcional à quantidade de ações possuídas. | dividendos por mês - a planilha manteve o termo apenas contextualizando e associando a rendimentos mensais/renda passiva |
-| Fundos de Investimento Imobiliário - FIIs | Investimento com foco no mercado de imóveis (como prédios comerciais e shoppings) que vem dos recebimentos de aluguéis. | FII |
-| Patrimônio acumulado | Estimativa de patrimônio total / Patrimônio Acumulado | Soma de todos os seus bens e investimentos menos as dívidas que você possui. |
-| Perfil de investidor | Classificação que indica quanto risco você aceita correr ao investir (conservador, moderado ou arrojado). | não substituído. |
-| Perfil de risco | O nível de tolerância **emocional e financeira** que uma pessoa tem para lidar com oscilações e possíveis perdas financeiras. | não substituído: contextualizado em chave composta que determina a distribuição de investimentos dentro dos FIIs. |
-| Projeção temporal | Tempo que você pretende deixar o dinheiro investido antes de resgatá-lo. | evolução do investimento, Projeções da evolução patrimonial |
-| Rentabilidade | Percentual de retorno de um investimento antes de descontar taxas administrativas e impostos. | Qual a taxa anual esperada de rendimento? / Rendimento Bruto Médio Mensal |
-| Retorno | O resultado obtido em uma aplicação, indicando se houve lucro ou prejuízo sobre o valor investido. | Taxa anual esperada de rendimento |
-| Renda passiva | Qualquer dinheiro que cai na sua conta regularmente sem que você precise trabalhar ativamente todos os dias por ele. Todo dividendo é uma renda passiva, mas nem toda renda passiva é um dividendo. | Dividendos por mês |
-| Taxa | conferir Rentabilidade e Retorno. O simulador foco exclusivamente em quanto o dinheiro rende ao longo de um período especificado (taxa de rendimentos/juros) e deixou de fora taxas de custo e índices externos. | aplicada para traduzir os conceitos de Rentabilidade e Retorno. |
-| Valor Futuro - VF | Estimativa de quanto um valor investido hoje valerá no futuro com o efeito dos juros. | Estimativa, Estimativa de patrimônio total / Patrimônio Acumulado |
-
-- Apesar de não ser estritamente necessário, foi-me útil saber sobre as categorias que seriam utilizadas no exercício. (?) (não ser se entra mesmo…. Talvez depois como adendo)
-    
-    Tabela 3 - Categorias de FII
-    
-    | Categoria de FII | Definição simplificada | Exemplos |
-    | --- | --- | --- |
-    | **FII de Tijolo** | Fundo imobiliário que compra imóveis físicos para ganhar dinheiro com aluguel e valorização. | "investir em um FII de tijolo me permite receber rendimentos mensais provenientes do aluguel de diversos escritórios e galpões." |
-    | **FII de Papel** | Fundo imobiliário que investe em títulos de dívida imobiliária que pagam juros e correção. | "os FIIs de papel costumam acompanhar a inflação ou taxas de juros, distribuindo os rendimentos dessas dívidas imobiliárias." |
-    | **FII de Logística** | Fundo imobiliário focado em galpões de armazenagem e centros de distribuição para locação. | "com o crescimento das compras online, os galpões de logística locados para grandes distribuidoras se tornaram muito demandados." |
-    | **FII de Shoppings** | Fundo imobiliário dono de shopping centers que distribui aos cotistas os ganhos com locação. | "o fundo imobiliário é proprietário de participações em grandes shoppings e repassa os aluguéis das lojas aos cotistas." |
-    | **FOFs** | Fundo imobiliário que investe em cotas de outros fundos imobiliários para diversificar a carteira. | "ao comprar cotas de um FOF, você se expõe a dezenas de fundos imobiliários diferentes administrados por gestores especialistas." |
-
-### Fase 2 - Estrutura geral das tabelas
-
-Com essa base resolvida, o próximo passo foi desenhar como as tabelas funcionariam. Usei a inteligência artificial para adiantar o desenvolvimento no meu próprio ritmo e, junto com o Gemini, montei um plano guia para estruturar a lógica da planilha. Usei essa etapa para organizar o fluxo dos dados, o que acabou gerando um manual prático, um infográfico visual e um mapa mental antes de eu partir para a construção direta.
-
-#### Infográfico com o passo a passo de criação
-
-!Infográfico em português com cinco fases para criar no Excel um simulador profissional de investimentos: mapear dados e resultados, organizar a interface, calcular patrimônio e dividendos, modelar cenários e simular carteiras diversificadas.
-
-Infográfico gerado no Gemini Notebook com base nos materiais encontrados, no manual já criado e nas instruções do desafio.
-
-A escolha de usar o Google Planilhas, em vez do Microsoft Excel, resolveu dois pontos centrais do projeto: o público e a tecnologia. Primeiro pela plataforma ser totalmente gratuita e muito popular, o que torna o acesso muito mais simples para qualquer um. E, ao mesmo tempo, trabalhar direto na nuvem foi fundamental para garantir a agilidade necessária e integrar a estrutura aos recursos de inteligência artificial do Gemini, onde foi estruturado todo o planejamento.
-
-Com o plano de desenvolvimento estabelecido, iniciei a criação das tabelas de dados, que precisavam responder às perguntas e métricas já estabelecidas pelo exercício:
-
-- Tabela de entrada: informações inseridas pela pessoa usuária;
-- Tabela de investimento: informações automáticas sobre o investimento, de acordo com os dados da pessoa usuária;
-- Tabela de projeção: informações automáticas com períodos específicos;
-- Tabela de apoio: informações sobre os fundos de investimentos e suas percentagens (exatamente como descrito no exercício);
-
-#### Tabela de entrada
-
-Nesta tabela ficaram as perguntas de negócio solicitadas, traduzidas e pensadas para serem versões mais acessíveis e democráticas.
-
-| Versão DIO | Versão intermediária | Versão final |
-| --- | --- | --- |
-| N/A | Qual a soma total dos seus rendimentos mensais? | Qual a soma total dos seus rendimentos mensais? |
-| Quanto investir por mês | Qual a quantia que deseja aplicar por mês? | campo excluído. Incluída como sugestão na tabela de investimento. |
-| Qual a taxa de rendimento mensal | Qual o valor total de recursos atuais acumulados? | Qual o valor total de seus recursos financeiros atuais? |
-| Por quantos anos | Por quanto tempo você pretende investir (anos) ? | Por quantos anos você pretende investir? |
-| N/A | Qual o seu perfil de investidor? | retirada da tabela e colocada como campo inicial do simulador. |
-
-#### Tabela de investimento
-
-Com os campos de dados da pessoa usuária criados, foi possível gerar os cálculos do investimento e as respostas para as perguntas de negócio que faltavam. A tabela realiza o processamento dos cálculos matemáticos, automatizando a entrega das respostas de forma direta::
-
-| Versão DIO | Versão final | Fórmula | Motivo do cálculo |
-| --- | --- | --- | --- |
-| Quanto investir por mês | Sugestão de aplicação (30%) | =salario_mensal*0,3 | Incluído como um campo informativo baseado na regra dos 30% sobre os rendimentos mensais, servindo como um parâmetro visual para a pessoa usuária comparar com o valor que ela realmente pretende aportar. |
-| Quanto de patrimônio vai acumular | Estimativa de patrimônio total | =-VF(tx_mensal;prazo_mes_user;dica_aporte;capital_inicial;0) | A função `VF` (Valor Futuro) foi utilizada para projetar o crescimento do que se aplica mensalmente sob o efeito dos juros compostos. |
-| Quanto vai receber de dividendos por mês | Dividendos por mês | =valor_total*tx_mensal | Calcula o retorno financeiro com base no patrimônio acumulado multiplicado pela taxa de rendimento estimada. |
-
-Para realizar alguns cálculos, foi necessário converter alguns dos dados para que as fórmulas não causassem erro e ficassem de melhor entendimento à pessoa usuária:
-
-| Dados | Conversão | Fórmula |
-| --- | --- | --- |
-| Período do investimento em anos | Período no qual se faz aplicações regulares de dinheiro para juntar patrimônio antes de começar a usá-lo. Em fórmulas matemáticas se usa em unidades mensais. | =prazo_ano_user*12 |
-| Taxa mensal equivalente | Taxa proporcional calculada mês a mês que equivale exatamente ao rendimento total esperado no ano. Para simplificar e facilitar a leitura, o cálculo original `(1 + taxa_anual)^(1/12) - 1` foi substituído por uma função nomeada personalizada. | =TAXAMENSAL(tx_anual) |
-
-<aside>
-<img src="/icons/info-alternate_blue.svg" alt="/icons/info-alternate_blue.svg" width="40px" />
-
-#### Regra dos 30%
-
-Essa regra é uma recomendação comum na prática do planejamento financeiro. Ela orienta a pessoa a destinar 30% dos seus rendimentos mensais para investimentos e construção de patrimônio..
-
-</aside>
-
-#### Tabela de projeção
-
-O exercício também pedia que fossem geradas projeções temporais para o investimento, ou seja, mostrar à pessoa usuária como o dinheiro que ela investiu iria evoluir ao longo do tempo (2, 5, 10, 20 e 30 anos), se as quantias mensais fossem as mesmas e o dinheiro não fosse utilizado. Para isso, foi utilizada a mesma fórmula da tabela anterior, com pequenas modificações:
-
-`=-VF(tx_mensal; ANOS * 12; aporte; capital_inicial; 0)` *(onde ANOS corresponde à linha de cada cenário fixado: 2, 5, 10, 20 ou 30).*
-
-Assim, teríamos vários cenários temporais, permitindo comparar o efeito dos juros compostos a curto, médio e longo prazo.
-
-Na última versão do simulador, foi incluído um campo de entrada na tabela, para que a pessoa usuária pudesse escolher outro período que não estivesse na tabela.
-
-#### Tabela de apoio
-
-Esta tabela funciona como a base da distribuição do investimento da pessoa usuária entre as categorias de FIIs. Para isso, foram utilizados:
-
-- Três perfis básicos de investidor: Conservador, Moderado e Arrojado;
-- Seis categorias de FIIs: Logística, Papel, Tijolo, Shoppings, FOFs, Outros (exatamente como descritos no exercício);
-
-Com o cruzamento entre os perfis e as categorias de FIIs, foi criada uma chave-composta que nomeamos no simulador como Perfil de Risco, e à cada chave foi inserida uma percentagem.
-
-| Dados de Apoio | Função no Simulador | Estrutura Técnica |
-| --- | --- | --- |
-| **Perfis e Fundos** | Mapear a distribuição de 100% dos aportes entre os diferentes tipos de ativos com base na escolha da pessoa usuária. | Organizada em uma matriz de suporte que cruza a escolha da lista de validação com as regras de alocação de cada perfil. |
-| **Busca por Chave Composta** | Localizar o percentual exato correspondente ao ativo e ao perfil selecionado de forma automática. | Utiliza a combinação de `PROCV` com uma chave composta para cruzar as variáveis e retornar o valor correto sem falhas. |
-
-### Glossário
-
-A tabela de glossário foi construída na etapa final do projeto e passou por diversas modificações ao longo do desenvolvimento. Com o suporte do Gemini e do Modo IA, pesquisei e refinei os termos técnicos originais para criar substituições claras e acessíveis, garantindo que a planilha possa ser compreendida e utilizada por qualquer pessoa.
-
-| Conceito Original | Nomenclatura Adotada | Significado Prático |
-| --- | --- | --- |
-| **Aporte Mensal** | *Sugestão de aplicação (30%)* / *Valor a aplicar* | A quantia em dinheiro que a pessoa usuária pretende investir periodicamente na formação de seu patrimônio. |
-| **Patrimônio Acumulado** | *Estimativa de patrimônio total* | O valor financeiro total somado e guardado ao longo do tempo, considerando o efeito dos juros compostos. |
-| **Rendimento da Carteira** | *Taxa mensal equivalente* | A porcentagem de ganho ou retorno financeiro calculada proporcionalmente mês a mês sobre o valor investido. |
-
-## Tecnologias e Ferramentas Utilizadas
-
-1. **Plataformas de desenvolvimento**
-    - Vs Code for Web in app
-    - GitHub
-2. **Softwares de planilhas**
-    - https://excel.cloud.microsoft/
-    - https://docs.google.com/spreadsheets/
-3. **Editores de texto**
-    - https://www.notion.com/pt
-    - https://www.samsung.com/br/apps/samsung-notes/
-4. **Google IA**
-    - https://gemini.google.com/
-    - https://notebook.google.com/
-    - https://search.google/intl/pt-BR/google-app/desktop/
-    - https://support.google.com/mail/answer/13952129#zippy=%2Coutros-requisitos
-5. **Acessibilidade**
-    - https://chromewebstore.google.com/detail/focusflow-smart-reader-ac/kgifnbinkpgeomapdbmgibiofenahlkk
-    - https://www.google.com/accessibility/
-    - https://www.microsoft.com/pt-br/accessibility
-    - https://support.microsoft.com/pt-br/accessibility/excel/accessibility-tools-for-excel
-    - https://workspace.google.com/u/0/marketplace/app/grackle_sheets/974235888140?flow_type=2
-    - https://workspace.google.com/u/0/marketplace/app/accessibility_checker_for_docs_slides_an/620872258362?flow_type=3
-    - https://hemingwayapp.com/
-6. Mídia
-    - https://clipchamp.com/pt-br/
-    - https://www.movavi.com/pt/#tab1
-    - https://apps.microsoft.com/detail/9NHJKCDVBLWD?hl=pt-br&gl=BR&ocid=pdpshare
+| Aspecto | Planilha comum (tradicional) | Simulador tipo app (este projeto) |
+| :--- | :--- | :--- |
+| **Visual** | Linhas de grade visíveis e blocos misturados, aumentando o ruído visual. | Interface limpa, sem linhas de grade, com leitura linear vertical e alto contraste. |
+| **Organização** | Dados de entrada e cálculos misturados sem hierarquia clara. | Separação explícita entre entradas (campos dimensionais) e resultados (campos fato). |
+| **Fórmulas** | Coordenadas genéricas difíceis de auditar (ex.: `=C5*(1+B12)`). | Fórmulas semânticas com intervalos nomeados e função nomeada (`TAXAMENSAL` no Google Planilhas). |
+| **Segurança** | Alto risco de apagar fórmulas por acidente. | Validação de dados por lista suspensa e proteção das células calculadas. |
+| **Acessibilidade** | Células mescladas e dependência exclusiva de cor para sinalização. | Sem células mescladas, tabelas estruturadas, textos alternativos e links de navegação entre abas. |
 
 ---
 
-# Simulador de investimentos
+## Por dentro da planilha
+
+O projeto mantém **versões equivalentes da planilha V3.1**, desenvolvidas para respeitar as particularidades de cada plataforma: uma versão nativa no **Google Planilhas** (online), uma versão adaptada no **Microsoft Excel para Web** (`.xlsx`) e uma versão compatível com **LibreOffice Calc** (`.ods`), todas pré-preenchidas com o cenário ilustrativo (`R$ 1.650,00`, `12` anos, `10,00% a.a.`) para evitar gráficos vazios na primeira abertura.
+
+### Equivalência entre Google Planilhas, Excel para Web e LibreOffice Calc (V3.1)
+
+| Aspecto | Google Planilhas (V3.1 online) | Microsoft Excel para Web (`.xlsx` V3.1) | LibreOffice Calc (`.ods` V3.1) |
+| :--- | :--- | :--- | :--- |
+| **Nome da Aba 2** | `Painel de evolução do investimento` | `Simulador de Rendimento` *(adaptado ao limite de 31 caracteres do Excel)* | `Painel de evolução do investimento` |
+| **Taxa mensal (`B21`)** | `=TAXAMENSAL(taxa_anual)` *(Função Nomeada)* | `=SEERRO((1 + taxa_anual)^(1/12) - 1; 0)` *(fórmula composta direta)* | `=SEERRO((1 + taxa_anual)^(1/12) - 1; 0)` *(compatível sem `LAMBDA`)* |
+| **Busca `PROCV` (`B3:B8`)** | `=SEERRO(PROCV((perfil_user & "-" & A3); T5_Perfis_de_risco_e_percentagens; 4; FALSO); 0)` | `=SEERRO(PROCV((perfil_user & "-" & A3); 'Perfis e Porcentagens'!$A$2:$D$19; 4; FALSO); 0)` | `=SEERRO(PROCV((perfil_user & "-" & A3); 'Perfis e Porcentagens'!$A$2:$D$19; 4; 0); 0)` |
+| **Limitação de interface** | Não permite ocultar títulos de linhas/colunas. | Não permite excluir linhas e colunas sobressalentes (usa `"n/a"` como delimitador). | Protege abas nativamente com células editáveis desbloqueadas (`C1`, `B12:B16`, `A7`). |
+
+### As 5 perguntas de negócio respondidas
+
+| Pergunta de negócio | Onde aparece na planilha |
+| :--- | :--- |
+| **1. Quanto investir por mês?** | Aba `Simulador de Investimentos`: a pessoa usuária pode informar um valor próprio (`aporte_user`) para as projeções e para a divisão por FIIs (`C3:C8`), ou deixar em branco para usar a sugestão automática de 30% da renda (`sugestao_aporte`). |
+| **2. Por quantos anos o capital será aportado?** | Aba `Simulador de Investimentos`: campo de prazo em anos (`prazo_ano_user`), convertido automaticamente em meses (`prazo_mes_user`). |
+| **3. Qual a taxa de rendimento esperada?** | Aba `Simulador de Investimentos`: campo de taxa anual (`taxa_anual`), convertido em taxa mensal efetiva composta (`taxa_mensal`). |
+| **4. Quanto patrimônio será acumulado?** | Aba `Simulador de Investimentos` (`patrimonio_estimado`) e Aba 2 (`Painel de evolução do investimento` no Google Planilhas / `.ods` e `Simulador de Rendimento` no `.xlsx` — marcos de 2, 5, 10, 20, 30 anos e prazo personalizado). |
+| **5. Quanto será gerado em dividendos mensais?** | Aba `Simulador de Investimentos` (`valor_mensal`) e coluna `Rendimento Bruto Médio Mensal` na Aba 2. |
+
+### Estrutura das 4 abas (V3.1)
+
+| Aba | Função | Principais componentes |
+| :--- | :--- | :--- |
+| **Simulador de Investimentos** | Painel principal | Seletor de perfil, tabela de alocação por FII, campos de entrada, tabela de estimativas e gráfico de pizza. |
+| **Painel de evolução do investimento** / **Simulador de Rendimento** | Projeção temporal | Cenários de 2, 5, 10, 20 e 30 anos, linha de simulação personalizada em anos e gráfico de evolução patrimonial. |
+| **Perfis e Porcentagens** | Tabela de apoio | Matriz de 18 linhas (3 perfis × 6 categorias de FIIs) com chave composta e soma exata de 100% por perfil. |
+| **Glossário** | Dicionário de dados | Mapeamento de intervalos nomeados, fórmulas, formatos numéricos e localização na planilha. |
+
+### Engenharia financeira e fórmulas principais
+
+* **Equivalência de juros compostos (`TAXAMENSAL` no Google Planilhas / fórmula direta no Excel e LibreOffice):** converte a taxa anual em taxa efetiva mensal sem superestimar juros, protegida por `SEERRO`.
+  ```excel
+  =SEERRO((1 + taxa_anual)^(1/12) - 1; 0)
+  ```
+  Exemplo: 10% ao ano equivale a aproximadamente **0,7974% ao mês** (exibido como 0,80%).
+* **Patrimônio acumulado (`VF` com aporte opcional):** calcula o valor futuro a juros compostos; se o campo manual de aporte (`aporte_user`) estiver vazio, aplica automaticamente 30% da renda mensal (`sugestao_aporte`). O sinal negativo antes de `VF` apenas converte o resultado final para valor positivo, mantendo aporte mensal e capital inicial com o mesmo sinal para que sejam somados corretamente.
+  ```excel
+  =SEERRO(-VF(taxa_mensal; prazo_mes_user; SE(ÉCÉL.VAZIA(aporte_user); sugestao_aporte; aporte_user); capital_inicial; 0); 0)
+  ```
+* **Renda passiva mensal estimada (dividendos):** multiplica o patrimônio acumulado pela taxa mensal equivalente.
+  ```excel
+  =SEERRO(patrimonio_estimado * taxa_mensal; 0)
+  ```
+  *Premissa didática de modelagem:* essa simplificação assume que **100% da taxa anual informada** é distribuída como dividendos mensais (sem separar ganho de capital na cota de <span lang="en">dividend yield</span>) e integralmente reinvestida até o fim do prazo, sem descontar inflação, vacância ou oscilação de mercado.
+* **Alocação por perfil (`PROCV` com chave composta e valor por categoria):** concatena o perfil escolhido (`perfil_user`, apontando para `$C$1`) com o tipo de FII (`Perfil-Tipo_FII`) para buscar o percentual exato na aba `Perfis e Porcentagens`. A tabela de distribuição monetária por FII (`C3:C8`) acompanha dinamicamente o aporte personalizado (`aporte_user`) quando preenchido, ou usa `sugestao_aporte` (30% da renda) quando vazio:
+  ```excel
+  # Busca percentual (Google Planilhas com tabela estruturada):
+  =SEERRO(PROCV((perfil_user & "-" & A3); T5_Perfis_de_risco_e_percentagens; 4; FALSO); 0)
+
+  # Busca percentual (Microsoft Excel para Web .xlsx e LibreOffice .ods):
+  =SEERRO(PROCV((perfil_user & "-" & A3); 'Perfis e Porcentagens'!$A$2:$D$19; 4; FALSO); 0)
+
+  # Valor alocado por categoria em C3:C8:
+  =SEERRO(SE(ÉCÉL.VAZIA(aporte_user); sugestao_aporte; aporte_user) * B3; 0)
+  ```
+
+### Intervalos e funções nomeados principais
+
+| Nome | Tipo | Função |
+| :--- | :--- | :--- |
+| `perfil_user` | Entrada (lista, `$C$1`) | Seleciona o perfil de investidor (`Conservador`, `Moderado` ou `Arrojado`). |
+| `salario_mensal` | Entrada (moeda) | Renda mensal informada pela pessoa usuária (`>= 0`). |
+| `capital_inicial` | Entrada (moeda) | Valor já guardado para iniciar a simulação (`>= 0`). |
+| `prazo_ano_user` | Entrada (número) | Prazo total de investimento em anos inteiros (`1` a `100`). |
+| `taxa_anual` | Entrada (percentual) | Taxa anual esperada de retorno (`0%` a `100%`). |
+| `aporte_user` | Entrada (moeda, opcional) | Valor mensal personalizado (`>= 0`) usado nas projeções de patrimônio, dividendos e divisão por FIIs (`C3:C8`). |
+| `sugestao_aporte` | Cálculo (moeda) | Sugestão automática de 30% da renda (`=SEERRO(salario_mensal * 0,30; 0)`). |
+| `prazo_mes_user` | Cálculo (número) | Conversão do prazo em anos para meses (`=SEERRO(prazo_ano_user * 12; 0)`). |
+| `TAXAMENSAL` | Função nomeada *(Google Planilhas)* | Fórmula reutilizável `=(1 + cell)^(1/12) - 1`. |
+| `taxa_mensal` | Cálculo (percentual) | Taxa mensal equivalente (`=TAXAMENSAL(taxa_anual)` no Sheets / `=SEERRO((1 + taxa_anual)^(1/12) - 1; 0)` no `.xlsx` e `.ods`). |
+| `patrimonio_estimado` | Cálculo (moeda) | Patrimônio total acumulado via função `VF`. |
+| `valor_mensal` | Cálculo (moeda) | Estimativa de dividendos mensais (`B22`). |
+| `simulador_personalizado` | Entrada (número) | Campo livre em anos inteiros (`1` a `100`) na Aba 2 (`A7`). |
+
+### Percentuais de alocação por perfil de investidor
+
+Os percentuais abaixo são estritamente didáticos e ilustrativos (inspirados no gabarito da aula, sem constituir recomendação de investimento), somando rigorosamente **100%** em cada perfil:
+
+| Categoria de FII | Conservador | Moderado | Arrojado |
+| :--- | :---: | :---: | :---: |
+| **Logística** | 25% | 20% | 15% |
+| **Papel** | 40% | 25% | 10% |
+| **Tijolo** | 20% | 25% | 20% |
+| **Shoppings** | 10% | 15% | 25% |
+| **FOFs** | 5% | 10% | 20% |
+| **Outros** | 0% | 5% | 10% |
+| **Total** | **100%** | **100%** | **100%** |
+
+### O que evoluiu em relação à versão do Expert
+
+1. **Equivalência real de juros compostos:** substituição da divisão simples (`taxa_anual / 12`) pela conversão composta exata `(1 + taxa)^(1/12) - 1` (encapsulada na função nomeada `TAXAMENSAL` no Google Planilhas e aplicada diretamente no `.xlsx` e `.ods`), com tratamento de erros `SEERRO`.
+2. **Aporte mensal flexível em todo o painel:** uso de `SE(ÉCÉL.VAZIA(aporte_user); sugestao_aporte; aporte_user)` tanto no patrimônio/dividendos quanto na tabela de divisão por FIIs (`C3:C8`) e gráfico de pizza.
+3. **Prazo personalizado e visualização fiel no painel temporal:** inclusão da linha extra editável (`A7`) na Aba 2 e remoção de linha de tendência estatística (linear ou exponencial <span lang="en">OLS</span>) sobre a curva determinística de `VF` nas versões `.xlsx`, `.ods` e <span lang="en">HTML5</span>, evitando distorções visuais nos marcos intermediários.
+4. **Acessibilidade digital nativa (WCAG 2.1 / 2.2):** eliminação de células mescladas, leitura linear vertical, tabelas nativas estruturadas, validações em todos os campos de entrada, textos alternativos nos gráficos, links bidirecionais de navegação no rodapé de cada aba e aba `Glossário` alinhada.
+5. **Documentação modular e dados prontos para <span lang="en">ETL</span>:** separação entre vitrine técnica ([readme-simulador.md](readme-simulador.md)), guia de uso ([tutorial-simulador.md](recursos/artefatos/tutorial-simulador.md)), manual didático de construção ([construcao-simulador.md](recursos/artefatos/construcao-simulador.md)), leitura sobre <span lang="en">ETL</span> ([do-grao-a-xicara-de-cafe.md](recursos/artefatos/do-grao-a-xicara-de-cafe.md)), matriz limpa de perfis em `.csv` e versão offline acessível em `.zip` (<span lang="en">HTML5</span>).
+
+> [!NOTE]
+> **Demonstração visual e vídeos em funcionamento:**
+> Confira as capturas da versão V3.1 com tabela acessível em [O Simulador em ação](recursos/artefatos/tutorial-simulador.md#o-simulador-em-ação) ou assista diretamente às gravações no Google Drive:
+> - ▶ [Vídeo 1 — Demonstração na versão Google Planilhas](https://drive.google.com/file/d/1blcwtjo6E72cOQcXb6c4EFewJb1WAgnP/view)
+> - ▶ [Vídeo 2 — Demonstração na versão Microsoft Excel](https://drive.google.com/file/d/1F4SCxKiVHnZK2WlhZdFNHrq6glFBDZ6n/view)
 
 ---
 
-Uma ferramenta de uso simples e acessível a qualquer pessoa! O simulador ajuda a planejar seu futuro sem complicações: você só precisa colocar o valor dos seus rendimentos e taxas que ele transforma automaticamente em gráficos visuais intuitivos. 
+## Processo criativo e princípios
+
+A construção ocorreu em cinco etapas: planejamento e estruturação, modelagem das planilhas, auditoria e tratamento de acessibilidade, criação dos artefatos de documentação e publicação.
+
+O ecossistema Google Gemini (incluindo NotebookLM e extensões no Workspace) e o Microsoft Copilot (Excel para Web) atuaram como apoio técnico na conferência de fórmulas, auditoria de acessibilidade e revisão textual em linguagem simples. Todo o passo a passo didático de construção está detalhado em [Guia Prático de Criação](recursos/artefatos/construcao-simulador.md), e a analogia introdutória do fluxo de dados em [Do Grão à Xícara de Café](recursos/artefatos/do-grao-a-xicara-de-cafe.md).
+
+### Princípios adotados
+
+* **Transparência:** fórmulas, variáveis e premissas abertas e documentadas.
+* **Reprodutibilidade:** qualquer pessoa pode auditar e adaptar os cálculos.
+* **Acessibilidade:** estrutura pensada para navegação por teclado e leitores de tela (NVDA, JAWS, TalkBack).
+* **Democratização do conhecimento:** explicação de termos financeiros sem depender de jargões técnicos.
+* **Autonomia:** uso independente para testar cenários sem suporte especializado.
 
 ---
 
-## O que você vai encontrar
+## Tecnologias e ferramentas utilizadas
 
-- Estruturada para responder a cinco perguntas centrais de planejamento financeiro: quanto, por quanto tempo, taxas, e estimativas de rendimento mensal e patrimônio final.
-- Foco em Fundos de Investimentos Imobiliários - FIIs.
-- Divide automaticamente o investimento em percentagens por classe de FII (Logística, Papel, Tijolo, Shoppings, FOFs e Outros), de acordo com a seleção de perfil de investidor.
-- Faz uma sugestão de investimento mensal, conforme a renda inserida.
-- Demonstra como o investimento irá evoluir em períodos de 2 a 30 anos.
-- Criada com a expectativa de suporte a leitores de tela.
+1. **Desenvolvimento e versionamento:** [Visual Studio Code](https://code.visualstudio.com/), [GitHub Desktop](https://docs.github.com/pt/desktop/overview/about-github-desktop)
+2. **Planilhas:** [Google Planilhas](https://docs.google.com/spreadsheets/), [Microsoft Excel para Web](https://excel.cloud.microsoft/)
+3. **Organização e escrita:** [Notion](https://www.notion.com/pt), [Google Docs](https://docs.google.com/), [Google Keep](https://keep.google.com/), [Samsung Notes](https://www.samsung.com/br/apps/samsung-notes/)
+4. **Inteligência artificial:** [Google Gemini](https://gemini.google.com/), [NotebookLM](https://notebook.google.com/), [Microsoft Copilot](https://copilot.com/pt-br/)
+5. **Acessibilidade e legibilidade:** [Grackle Sheets](https://workspace.google.com/u/0/marketplace/app/grackle_sheets/974235888140), [Verificador de Acessibilidade do Excel](https://support.microsoft.com/pt-br/accessibility/excel/accessibility-tools-for-excel), [FocusFlow Smart Reader](https://chromewebstore.google.com/detail/focusflow-smart-reader-ac/kgifnbinkpgeomapdbmgibiofenahlkk), [Hemingway Editor](https://hemingwayapp.com/), diretrizes [Google Acessibilidade](https://www.google.com/accessibility/) e [Microsoft Acessibilidade](https://www.microsoft.com/pt-br/accessibility)
+6. **Captura e edição de mídia:** [Microsoft Clipchamp](https://clipchamp.com/pt-br/), [Movavi Video Editor](https://www.movavi.com/pt/), [Apowersoft Gravador de Tela](https://www.apowersoft.com.br/gravador-de-tela-gratis)
 
 ---
 
 ## Como usar o simulador
 
-1. **Escolha sua versão:** Vá até a seção "Materiais e Links" e escolha se prefere usar o **Microsoft Excel** ou o **Google Planilhas**.
-2. **Baixe ou copie o arquivo:**
-    - Se escolheu **Excel**, faça o download do arquivo para o seu computador.
-    - Se escolheu **Google Planilhas**, clique em *Arquivo > Fazer uma cópia* para conseguir editar (o link original serve apenas para visualização).
-3. **Abra o arquivo** no seu programa de planilhas favorito.
-4. **Defina seu estilo:** Na aba `Simulador de Investimentos`, clique na caixinha de opções e escolha o seu perfil de investidor.
-5. **Coloque as suas informações:** Preencha os campos da tabela explicando o seu momento atual:
-    - **Renda mensal:** Quanto você ganha por mês.
-    - **Recurso inicial:** O dinheiro que você já tem guardado hoje para começar.
-    - **Prazo desejado:** Por quantos anos você pretende deixar o dinheiro rendendo.
-    - **Taxa anual esperada:** O quanto você acha que seu dinheiro vai render por ano (se não souber, pode deixar o valor que já vem sugerido na planilha).
-6. **Veja as sugestões automáticas:** Sem que você precise calcular nada, a ferramenta calcula e te mostra quanto investir por mês, como dividir suas escolhas entre os fundos e o valor total que você pode juntar.
-7. **Acompanhe o crescimento:** Na aba `Painel de evolução`, você consegue ver **em um gráfico e em uma tabela** como o seu dinheiro vai crescer ao longo do tempo (nos marcos de 2, 5, 10, 20 e 30 anos). Se quiser, você também pode digitar um período anual específico para testar.
-8. Se precisar de mais detalhes, só ir ao Tutorial disponibilizado aqui e na planilha.
+O passo a passo completo — incluindo instruções para fazer sua cópia privada, descrição dos perfis de investidor, leitura dos resultados, telas e demonstrações em vídeo — está no tutorial dedicado:
+
+→ **[Acessar Tutorial de Uso e Demonstração Visual](recursos/artefatos/tutorial-simulador.md)**
+
+### Sobre os resultados mostrados
+
+Este simulador tem finalidade estritamente educacional e utiliza parâmetros fixos informados pela pessoa usuária. Os FIIs **não** têm garantia de rentabilidade fixa e o preço das cotas oscila na bolsa. Embora a maioria das corretoras não cobre taxa de corretagem para FIIs, os fundos possuem taxas de administração e gestão já descontadas antes do pagamento dos dividendos. Além disso, os cálculos **não** descontam inflação ou eventuais impostos sobre ganho de capital — e lembre-se de montar uma **reserva de emergência em renda fixa de liquidez diária** antes de alocar na bolsa.
 
 ---
 
-## O Simulador em ação
+## Materiais e links
 
-1. Tirar prints da ferramenta:
-    - Faça 1 print com o perfil Conservador selecionado.
-    - Faça 1 print alternando para o perfil Moderado ou Arrojado (para demonstrar no portfólio que os valores e o gráfico de pizza mudam dinamicamente).
+* **Planilha online e arquivos exportados:**
+  * **Google Planilhas (V3.1 — abrir e fazer uma cópia):** [Simulador de Investimentos V3.1 - Camila Santino - 2026](https://docs.google.com/spreadsheets/d/1hxfx57uandBsunFlzJu_pOY_2pP2ur25bw2XiaCZx1Y/edit)
+  * **Planilha Microsoft Excel (.xlsx):** [Simulador de Investimentos V3.1 - Camila Santino - 2026.xlsx](recursos/arquivos/Simulador%20de%20Investimentos%20V3.1%20-%20Camila%20Santino%20-%202026.xlsx)
+  * **Planilha OpenDocument / LibreOffice (.ods):** [Simulador de Investimentos V3.1 - Camila Santino - 2026.ods](recursos/arquivos/Simulador%20de%20Investimentos%20V3.1%20-%20Camila%20Santino%20-%202026.ods)
+  * **Matriz tabular de perfis pronta para <span lang="en">ETL</span> (.csv):** [Simulador de Investimentos V3.1 - Camila Santino - 2026.csv](recursos/arquivos/Simulador%20de%20Investimentos%20V3.1%20-%20Camila%20Santino%20-%202026.csv)
+  * **Versão acessível em <span lang="en">HTML5</span> com navegação offline (.zip):** [Simulador de Investimentos V3.1 - Camila Santino - 2026.zip](recursos/arquivos/Simulador%20de%20Investimentos%20V3.1%20-%20Camila%20Santino%20-%202026.zip)
+* **Vídeos de demonstração (Google Drive):**
+  * [Vídeo 1 — Demonstração na versão Google Planilhas](https://drive.google.com/file/d/1blcwtjo6E72cOQcXb6c4EFewJb1WAgnP/view)
+  * [Vídeo 2 — Demonstração na versão Microsoft Excel](https://drive.google.com/file/d/1F4SCxKiVHnZK2WlhZdFNHrq6glFBDZ6n/view)
+* **Documentação oficial do repositório:**
+  * [Tutorial de uso e demonstração visual](recursos/artefatos/tutorial-simulador.md)
+  * [Guia prático de criação do simulador do zero](recursos/artefatos/construcao-simulador.md)
+  * [Do Grão à Xícara de Café — Entendendo o processo de ETL (Markdown)](recursos/artefatos/do-grao-a-xicara-de-cafe.md) | [versão em PDF](recursos/arquivos/Do%20Gr%C3%A3o%20%C3%A0%20X%C3%ADcara%20de%20Caf%C3%A9.pdf)
+  * [Referências de acessibilidade (coleção OneTab)](https://www.one-tab.com/page/hXlZXtryQpiPS0gNdNUk9A)
 
-desafiodio1.mp4
+---
 
-desafiodio2.mp4
+## Licença e uso
 
-!printsumulador.png
+Consulte o arquivo de licença do repositório ([Licença MIT](../LICENSE)) para informações sobre distribuição, reutilização e adaptação. Ao compartilhar a planilha, mantenha esta documentação junto ao arquivo para preservar o contexto, a transparência dos cálculos e os recursos de acessibilidade.
 
-*Preenchendo seus dados na aba principal.* 
+---
 
-Simulador de Investimentos - Camila Santino - 2026
+Feedbacks e sugestões são bem-vindos pelo e-mail [camila_santino@hotmail.com](mailto:camila_santino@hotmail.com) ou pelo [formulário de feedback](https://app.notion.com/p/feijaodecordacultural/4189357d8b608063b691fb98c95dcc1b?source=copy_link).
 
-Notas
+Feito por [Camila Santino](https://github.com/camila-santino)  
+[![LinkedIn de Camila Santino](https://img.shields.io/badge/LinkedIn-Camila%20Santino-black?style=plastic&labelColor=blue)](https://www.linkedin.com/in/camilasantino) [![Linklist de Camila Santino](https://img.shields.io/badge/Linklist.bio-camila__santino-9cf?style=plastic&logo=linktree)](https://linklist.bio/camila_santino)
 
-[1] Os gráficos desta planilha estão com seus respectivos textos alternativos em nota.
-[2] As células aparentemente vazia, estão com a expressão "n/a" para melhorar a navegação em
-leitores de texto.
-[3] Fundos de Investimento Imobiliario - abbr FII
-
-[1] Quer fazer outra projeção? Preencha a célula com o tempo que pretende investir e veja a evolução do
-seu investimento.
-
-!Aba 2 - Painel de Evolução do Investimento. *Tabela 3 - Projeção temporal ajustada automaticamente com a evolução do seu dinheiro.*
-
-Aba 2 - Painel de Evolução do Investimento. *Tabela 3 - Projeção temporal ajustada automaticamente com a evolução do seu dinheiro.*
-
-!Aba 3 - Perfis de Risco e percentagens. *Tabela 4 - Perfis de Risco cadastrados e suas respectivas porcentagens.*
-
-Aba 3 - Perfis de Risco e percentagens. *Tabela 4 - Perfis de Risco cadastrados e suas respectivas porcentagens.*
-
-!Aba 4 - Glossário. *Tabela 5 - Nomenclatura usada em funções e intervalos nomeados.*
-
-Aba 4 - Glossário. *Tabela 5 - Nomenclatura usada em funções e intervalos nomeados.*
-
-!Gráfico 1 - Gráfico com os dados gerados na tabela 1 - Divisão do Aporte por Categoria de FII, na Aba Simulador de Investimentos.
-
-Gráfico 1 - Gráfico com os dados gerados na tabela 1 - Divisão do Aporte por Categoria de FII, na Aba Simulador de Investimentos.
-
-!Gráfico 2 - Gráfico com os dados gerados na tabela 4 - Projeção temporal do investimento, na Aba Painel de Evolução do Investimento.
-
-Gráfico 2 - Gráfico com os dados gerados na tabela 4 - Projeção temporal do investimento, na Aba Painel de Evolução do Investimento.
-
-## **📚 Materiais e Links**
-
-- Planilha do projeto: <span style=“color:red”>**[Indicação: Adicione aqui o link direto para download do arquivo .xlsx no seu repositório]**</span>
-- **Referências em acessibilidade**: https://www.one-tab.com/page/hXlZXtryQpiPS0gNdNUk9A
-- ‣
-
-—
-
-<p align=center> Feito com curiosidade, café e poesia por <a href=“https://github.com/camila-santino”>Camila Santino</a> ✨
-
-Obrigada por visitar meu espaço! </p>
-
-Crie uma fórmula que identifique o perfil de risco dentro da aba “Perfis de risco” a partir do que o usuário selecionou em C5 e C9 da aba do painel
-
-<p align=center> Feito com curiosidade, café e poesia por <a href="https://github.com/camila-santino">Camila Santino</a> ✨
-
-```
-This README has been optimized for accessibility based on GitHub's blogpost "Tips for Making your GitHub Profile Page Accessible".
-```
-
-Obrigada por visitar meu espaço! </p>
+> *Este README foi estruturado seguindo boas práticas de acessibilidade do GitHub ([Tips for Making your GitHub Profile Page Accessible](https://github.blog/developer-skills/github/5-tips-for-making-your-github-profile-page-accessible/)).*
