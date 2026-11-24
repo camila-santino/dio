@@ -27,7 +27,6 @@
 
 > [<span lang="en">README</span> completo do perfil (em francês, inglês e português do Brasil)](https://github.com/camila-santino/camila_santino/blob/main/README.md)
 
-Oi! Sou Camila — desenvolvedora por curiosidade e artista por natureza, direto de Fortaleza, Brasil. Eu sou uma pessoa que gosta de praticar códigos e inventar meus próprios <span lang="en">apps</span> e automações. Finalmente, resolvi praticar por aqui e não só ficar observando. Nem sempre sei o nome da linguagem que estou usando — mas sei o que quero construir, e busco aprender o necessário para isso. Gosto de testar ideias com código, mesmo sem seguir uma estrutura formal: o foco é criar, entender e evoluir. Vejo a tecnologia como ferramenta cultural, e quero trabalhar em projetos que unam essas dimensões, criando experiências que conectem pessoas, ideias e mundos.
 Se você gosta de projetos com alma, ideias fora da curva ou quer trocar experiências, fique à vontade para me chamar.
 Aqui, cada repositório é uma tentativa de transformar curiosidade em criação.
 
