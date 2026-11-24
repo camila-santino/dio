@@ -1,8 +1,8 @@
 # Desafio de Projeto — Simulador de Investimentos em FIIs
 
-[![DIO - Simulador Financeiro](https://img.shields.io/badge/DIO-Simulador%20Financeiro-blue)](https://dio.me)
-![Feito com Inteligência Artificial](https://img.shields.io/badge/feito_com-Intelig%C3%AAncia%20Artificial-blue?style=plastic)
-![Status do projeto: pronto para publicação](https://img.shields.io/badge/Status-v3.1%20%282026%29-brightgreen?style=plastic)
+[![Acessar site da Digital Innovation One (DIO) — Simulador Financeiro](https://img.shields.io/badge/DIO-Simulador%20Financeiro-005a9c)](https://dio.me)
+![Feito com Inteligência Artificial](https://img.shields.io/badge/feito_com-Intelig%C3%AAncia%20Artificial-005a9c?style=plastic)
+![Status do projeto: versão 3.1 (2026)](https://img.shields.io/badge/Status-v3.1%20%282026%29-1f4e3d?style=plastic)
 
 ---
 
@@ -36,21 +36,21 @@ desafio-simulador-investimentos/
 * [Por dentro da planilha (fórmulas, variáveis, versões e perfis)](#por-dentro-da-planilha)
 * [Como usar o simulador (Tutorial completo com telas e vídeos)](recursos/artefatos/tutorial-simulador.md)
 * [Guia prático de criação do zero (Construção e acessibilidade)](recursos/artefatos/construcao-simulador.md)
-* [Do Grão à Xícara de Café — Entendendo o ETL](recursos/artefatos/do-grao-a-xicara-de-cafe.md)
+* [Do Grão à Xícara de Café — Entendendo o <span lang="en">ETL</span>](recursos/artefatos/do-grao-a-xicara-de-cafe.md)
 * [Tecnologias e ferramentas utilizadas](#tecnologias-e-ferramentas-utilizadas)
-* [Materiais e links para download](#materiais-e-links)
+* [Materiais e links para <span lang="en">download</span>](#materiais-e-links)
 
 ---
 
 ## Visão geral
 
-Este projeto foi desenvolvido para o desafio prático do bootcamp **Reclame AQUI — Dados e IA na Prática**, em parceria com a **Digital Innovation One (DIO)**. O objetivo foi construir do zero uma planilha de simulação de investimentos em **Fundos de Investimento Imobiliário (FIIs)** com visual e navegação próximos aos de um aplicativo, priorizando clareza matemática, acessibilidade digital nativa e linguagem simples.
+Este projeto foi desenvolvido para o desafio prático do <span lang="en">bootcamp</span> **Reclame AQUI — Dados e IA na Prática**, em parceria com a **Digital Innovation One (DIO)**. O objetivo foi construir do zero uma planilha de simulação de investimentos em **Fundos de Investimento Imobiliário (FIIs)** com visual e navegação próximos aos de um aplicativo, priorizando clareza matemática, acessibilidade digital nativa e linguagem simples.
 
 A ferramenta responde a cinco perguntas centrais de planejamento financeiro, projeta o crescimento do patrimônio e dos dividendos mensais em prazos de 2 a 30 anos (além de um campo para prazo personalizado) e divide o aporte mensal entre seis categorias de FIIs conforme o perfil de investidor selecionado.
 
-### Planilha tradicional vs. Simulador tipo app
+### Planilha tradicional vs. Simulador tipo <span lang="en">app</span>
 
-| Aspecto | Planilha comum (tradicional) | Simulador tipo app (este projeto) |
+| Aspecto | Planilha comum (tradicional) | Simulador tipo <span lang="en">app</span> (este projeto) |
 | :--- | :--- | :--- |
 | **Visual** | Linhas de grade visíveis e blocos misturados, aumentando o ruído visual. | Interface limpa, sem linhas de grade, com leitura linear vertical e alto contraste. |
 | **Organização** | Dados de entrada e cálculos misturados sem hierarquia clara. | Separação explícita entre entradas (campos dimensionais) e resultados (campos fato). |
@@ -70,8 +70,8 @@ O projeto mantém **versões equivalentes da planilha V3.1**, desenvolvidas para
 | :--- | :--- | :--- | :--- |
 | **Nome da Aba 2** | `Painel de evolução do investimento` | `Simulador de Rendimento` *(adaptado ao limite de 31 caracteres do Excel)* | `Painel de evolução do investimento` |
 | **Taxa mensal (`B21`)** | `=TAXAMENSAL(taxa_anual)` *(Função Nomeada)* | `=SEERRO((1 + taxa_anual)^(1/12) - 1; 0)` *(fórmula composta direta)* | `=SEERRO((1 + taxa_anual)^(1/12) - 1; 0)` *(compatível sem `LAMBDA`)* |
-| **Busca `PROCV` (`B3:B8`)** | `=SEERRO(PROCV((perfil_user & "-" & A3); T5_Perfis_de_risco_e_percentagens; 4; FALSO); 0)` | `=SEERRO(PROCV((perfil_user & "-" & A3); 'Perfis e Porcentagens'!$A$2:$D$19; 4; FALSO); 0)` | `=SEERRO(PROCV((perfil_user & "-" & A3); 'Perfis e Porcentagens'!$A$2:$D$19; 4; 0); 0)` |
-| **Limitação de interface** | Não permite ocultar títulos de linhas/colunas. | Não permite excluir linhas e colunas sobressalentes (usa `"n/a"` como delimitador). | Protege abas nativamente com células editáveis desbloqueadas (`C1`, `B12:B16`, `A7`). |
+| **Busca `PROCV` (`B3:B8`)** | `=SEERRO(PROCV((perfil_user & "-" & A3); 'Perfis e Porcentagens'!$A$2:$D$19; 4; FALSO); 0)` | `=SEERRO(PROCV((perfil_user & "-" & A3); 'Perfis e Porcentagens'!$A$2:$D$19; 4; FALSO); 0)` | `=SEERRO(PROCV((perfil_user & "-" & A3); 'Perfis e Porcentagens'!$A$2:$D$19; 4; FALSO); 0)` |
+| **Limitação de interface e proteção** | Não oculta títulos de linhas/colunas; usa `"n/a"` em células estruturais vazias; proteção estrita com `C1`, `B12:B16` e `A7` liberadas e gráficos em alto contraste com `alt-text`. | Não remove linhas/colunas sobressalentes; usa `"n/a"` em células estruturais vazias e delimitadores finais; proteção estrita com `C1`, `B12:B16` e `A7` liberadas e gráficos em alto contraste com `alt-text`. | Interface personalizável; usa `"n/a"` em células estruturais vazias; proteção nativa estrita com `C1`, `B12:B16` e `A7` desbloqueadas e gráficos unificados de alto contraste com `alt-text`. |
 
 ### As 5 perguntas de negócio respondidas
 
