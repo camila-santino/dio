@@ -1,3 +1,4 @@
 {
-	"editor.defaultFormatter": "esbenp.prettier-vscode"
+    "markdown.validate.enabled": true,
+    "git.ignoreLimitWarning": true
 }
