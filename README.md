@@ -1,4 +1,3 @@
-
 > “We’re made of star stuff.” — Carl Sagan
 
 # Cursos da Dio
@@ -11,15 +10,15 @@
 
 1. [Desafio Ebook por prompts](/desafio-Ebook/readme-ebook.md)
 2. [Desafio Podcast por prompts](/desafio-podcast/readme-podcast.md)
-3. [Dio-lab](/desafio-lab/readme-lab.md)
+3. [Desafio Simulador de Investimentos](/desafio-simulador-investimentos/readme-simulador.md)
 
 ---
 
 ## 🛠️ Habilidades e Competências
 
-- UX/UI · prototipagem · apps experimentais · no-code · Git · Figma · APIs · web scraping  
-- Inteligência Artificial · machine learning · processamento de linguagem natural  
-- Escrita criativa · design narrativo · curadoria digital · multilinguismo · pesquisa cultural  
+- UX/UI · prototipagem · apps experimentais · no-code · Git · Figma · APIs · web scraping
+- Inteligência Artificial · machine learning · processamento de linguagem natural
+- Escrita criativa · design narrativo · curadoria digital · multilinguismo · pesquisa cultural
 - Autodidatismo · pensamento crítico · comunicação visual · empatia · organização e planejamento
 
 ---
@@ -32,7 +31,7 @@ Oi! Sou Camila — desenvolvedora por curiosidade e artista por natureza, direto
 Se você gosta de projetos com alma, ideias fora da curva ou quer trocar experiências, fique à vontade para me chamar.
 Aqui, cada repositório é uma tentativa de transformar curiosidade em criação.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Camila%20Santino-blue?logo=linkedin)](https://www.linkedin.com/in/camilasantino)  [![Linklist](https://img.shields.io/badge/Linklist.bio-camila__santino-9cf?logo=linktree)](https://linklist.bio/camila_santino)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Camila%20Santino-blue?logo=linkedin)](https://www.linkedin.com/in/camilasantino) [![Linklist](https://img.shields.io/badge/Linklist.bio-camila__santino-9cf?logo=linktree)](https://linklist.bio/camila_santino)
 
 ---
 
