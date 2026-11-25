@@ -1,0 +1,6 @@
+{
+  "name": "Simulador de IR Acessível",
+  "description": "Aplicativo acessível, inclusivo e gratuito para entrada de registros de Imposto de Renda, integração com Google Sheets e Google Drive, automação modular em Apps Script, simulador de IRPF e revisão preventiva de malha fina.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
